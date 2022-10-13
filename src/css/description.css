@@ -1,0 +1,82 @@
+ul {
+  list-style: none; /* Quitamos los marcadores */
+  padding: 0; /* Quitamos el padding por defecto de la lista */
+  margin-left: 10px; /* Separamos la lista de la izquierda */
+  }
+  
+  li::before { /* Añadimos contenido antes de cada elemento de la lista */
+  content: "\1F355"; /* Insertamos el marcador */
+  padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
+  
+  }
+
+  .Container-main-description{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(198, 144, 9, 0.27);
+
+  }
+
+  .img-description img{
+    border-radius: 5px;
+  }
+
+  .description-paragraph{
+    width: 100%;
+  }
+  .btn-price{
+    display: flex;
+    justify-content: space-between
+  }
+
+  /* Movil */
+@media screen and (max-width: 500px){
+  .Container-main-description{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 2.5rem;
+  }
+
+  .description{
+    width: 100%;
+  }
+
+  .img-description{
+    width: 100%;
+    align-self: center;
+    
+  }
+  
+
+}
+/* Tablet */
+@media screen and (min-width: 500px){
+  .Container-main-description{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 2.5rem;
+  }
+  .img-table{
+    height: 10%;
+    }
+
+}
+/* Descktor */
+@media screen and (min-width: 960px){
+  .Container-main-description{
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 2.5rem;
+  }
+
+  .description{
+    width: 60%;
+  }
+
+  .img-description{
+    width: 40%;
+    align-self: center;
+    
+  }
+
+}
